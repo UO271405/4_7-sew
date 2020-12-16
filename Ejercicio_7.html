@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio_7</title>
+        <meta name="description" content="Menu gimnasio">
+        <meta name="author" content="Luis Fernández Suárez">
+        <link rel="stylesheet" href="Ejercicio7.css"/>
+    </head>
+    <body>
+        <h1>Menú gimnasio</h1>
+        <form  id="basedatos" action='#' method='post'>
+            <div class="container">
+                <strong>Crear Base de Datos</strong>
+                <input type='submit' class='button' name='CrearBase' value='Crear base'/>
+            </div>
+            <div class="container">
+                <strong>Crear tablas</strong>
+                <input type='submit' class='button' name='CrearTablas' value='Crear tablas'/>
+            </div>
+            <div class="container">
+                <strong>Cargar instalaciones, monitores y actividades</strong>
+                <input type='submit' class='button' name='cargar' value='Cargar'/>
+            </div>
+            <div class="container">
+                <strong>Creación monitor</strong>
+                <p>Id del monitor:</p>
+                    <input type='text' title="id_monitor_insertarMonitor" class='text' name='id_monitor_insertarMonitor'/>
+                <p>Nombre del monitor:</p>
+                    <input type='text' title="nombre_monitor_insertarMonitor" class='text' name='nombre_monitor_insertarMonitor'/>
+                <p>Apellidos del monitor:</p>
+                    <input type='text' title="apellidos_monitor_insertarMonitor" class='text' name='apellidos_monitor_insertarMonitor'/>
+                <p>Edad del monitor:</p>
+                    <input type='text' title="edad_monitor_insertarMonitor" class='text' name='edad_monitor_insertarMonitor'/>
+                <input type='submit' class='insertarMonitor' name='insertarMonitor' value='Insertar'/>
+            </div>
+            <div class="container">
+                <strong>Creación actividad definida</strong>
+                <p>Id de la actividad:</p>
+                    <input type='text' title="id_actividad_insertarActividadDefinida" class='text' name='id_actividad_insertarActividadDefinida'/>
+                <p>Id del monitor de la actividad:</p>
+                    <input type='text' title="id_monitor_insertarActividadDefinida" class='text' name='id_monitor_insertarActividadDefinida'/>
+                <p>Id de la instalación:</p>
+                    <input type='text' title="id_instalacion_insertarActividadDefinida" class='text' name='id_instalacion_insertarActividadDefinida'/>
+                <p>Hora de inicio de la actividad:</p>
+                    <input type='text' title="hora_inicio_insertarActividadDefinida" class='text' name='hora_inicio_insertarActividadDefinida' placeholder='Ejemplo:  12:00:00'/>
+                <p>Hora fin de la actividad:</p>
+                    <input type='text' title="hora_fin_insertarActividadDefinida" class='text' name='hora_fin_insertarActividadDefinida' placeholder='Ejemplo:  13:00:00'/>
+                <p>Fecha de la actividad: </p>
+                    <input type='text' title="fecha_insertarActividadDefinida" class='text' name='fecha_insertarActividadDefinida' placeholder='Ejemplo:  2020-12-25'/>
+                <p>Plazas de la actividad:</p>
+                    <input type='text' title="plazas_insertarActividadDefinida" class='text' name='plazas_insertarActividadDefinida'/>
+                <input type='submit' class='button' name='insertarActividadDefinida' value='Insertar'/>
+            </div>
+            <div class="container">
+                <strong>Modificar nombre de una instalación</strong>
+                <p>Por favor, introduzca el id de la instalación:</p>
+                    <input type='text' title="id_instalacion_modif" class='text' name='id_instalacion_modif'/>
+                <p>Nuevo nombre:</p>
+                    <input type='text' title="nombre_instalacion_modif" class='text' name='nombre_instalacion_modif'/>
+                <input type='submit' class='button' name='modificar' value='Modificar'/>
+            </div>
+            <div class="container">
+                <strong>Eliminar actividad definida</strong>
+                <p>Id de la actividad definida a eliminar:</p>
+                    <input type='text' title="id_actividad_eliminar" class='text' name='id_actividad_eliminar'/>
+                <p>Hora de inicio de la actividad:</p>
+                    <input type='text' title="hora_inicio_actividad_eliminar" class='text' name='hora_inicio_actividad_eliminar' placeholder='Ejemplo: 11:00:00'/>
+                <p>Hora fin de la actividad:</p>
+                    <input type='text' title="hora_fin_actividad_eliminar" class='text' name='hora_fin_actividad_eliminar' placeholder='Ejemplo: 12:00:00'/>
+                <p>Fecha de la actividad: </p>
+                    <input type='text' title="fecha_actividad_eliminar" class='text' name='fecha_actividad_eliminar' placeholder='Ejemplo: 2020-12-25'/>
+                <input type='submit' class='button' name='eliminar' value='Eliminar'/>
+            </div>
+		</form>
+
+        <p>Instalaciones cargadas correctamente</p><p>Monitores cargados correctamente</p><p>Actividades cargadas correctamente</p>    </body>
+</html>
